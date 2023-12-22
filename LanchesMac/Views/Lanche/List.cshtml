@@ -1,8 +1,18 @@
 ﻿@model IEnumerable<LanchesMac.Models.Lanche>
 
     <div>
-        <h2>Todos os Lanches</h2>
+        <h2>@ViewData["Titulo"]</h2>
     </div>
+<div>
+    <h2>
+        @ViewData["Data"]
+    </h2>
+</div>
+<hr />
+<h3>@ViewBag.Total @ViewBag.TotalLanches</h3>
+<hr />
+
+<h4>@TempData["Nome"]</h4>
 
 @foreach(var lanche in Model)
 {
