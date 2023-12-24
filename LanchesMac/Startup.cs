@@ -3,6 +3,7 @@ using LanchesMac.Repositories;
 using LanchesMac.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace LanchesMac;
 public class Startup
 {
