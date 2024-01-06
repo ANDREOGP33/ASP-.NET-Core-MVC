@@ -26,7 +26,7 @@ namespace LanchesMac.Controllers
                 CarrinhoCompra = _carrinhoCompra,
                 CarrinhoCompraTotal = _carrinhoCompra.GetCarrinhoCompraTotal(),
             };
-            return View(); 
+            return View(carrinhoCompraVM); 
         }
 
         public IActionResult AdicionarItemNoCarrinhoCompra(int lancheId)
