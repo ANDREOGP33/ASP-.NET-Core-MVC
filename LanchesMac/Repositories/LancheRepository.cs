@@ -12,9 +12,9 @@ namespace LanchesMac.Repositories
         {
             _context = context;
         }
-        IEnumerable<Lanche> ILancheRepository.Lanches => _context.Lanches.Include(c => c.Categoria);
+        public IEnumerable<Lanche> Lanches => _context.Lanches.Include(c => c.Categoria);
 
-        IEnumerable<Lanche> ILancheRepository.LanchesPreferidos => _context.Lanches.
+        public IEnumerable<Lanche> LanchesPreferidos => _context.Lanches.
                                               Where(l => l.IsLanchePreferido).
                                               Include(c => c.Categoria);
 
