@@ -20,13 +20,15 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-light asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Lanche" asp-action="List">Lanches</a>
                         </li>
                         @await Component.InvokeAsync("CarrinhoCompraResumo")
-
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Contato" asp-action="Index">Contato</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -40,7 +42,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - LanchesMac - 
+            &copy; @DateTime.Now.Year - LanchesMac
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
